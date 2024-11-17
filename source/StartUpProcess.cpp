@@ -37,16 +37,16 @@ StartUpProcess::StartUpProcess()
 	//! Load default font for the next text outputs
 	Theme::LoadFont("");
 
-	background = new GuiImage(screenwidth, screenheight, (GXColor){244, 243, 242, 255});
+	background = new GuiImage(screenwidth, screenheight, (GXColor){0, 0, 0, 255});
 
 	GXImageData = Resources::GetImageData("gxlogo.png");
 	GXImage = new GuiImage(GXImageData);
 	GXImage->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
 	GXImage->SetPosition(screenwidth / 2, screenheight / 2);
 
-	titleTxt = new GuiText("Loading...", 24, (GXColor){255, 255, 255, 255});
-	titleTxt->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
-	titleTxt->SetPosition(-100, -100);
+	titleTxt = new GuiText("...", 24, (GXColor){255, 255, 255, 255});
+	titleTxt->SetAlignment(ALIGN_RIGHT, ALIGN_BOTTOM);
+	titleTxt->SetPosition(screenwidth - 5, screenheight - 5);
 
 	messageTxt = new GuiText(" ", 22, (GXColor){255, 255, 255, 255});
 	messageTxt->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
