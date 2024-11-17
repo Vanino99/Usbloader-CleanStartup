@@ -44,7 +44,7 @@ StartUpProcess::StartUpProcess()
 	GXImage->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
 	GXImage->SetPosition(screenwidth / 2, screenheight / 2);
 
-	titleTxt = new GuiText("...", 24, (GXColor){255, 255, 255, 255});
+	titleTxt = new GuiText("", 24, (GXColor){255, 255, 255, 255});
 	titleTxt->SetAlignment(ALIGN_RIGHT, ALIGN_BOTTOM);
 	titleTxt->SetPosition(screenwidth - 5, screenheight - 5);
 
